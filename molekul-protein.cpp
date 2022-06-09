@@ -15,9 +15,8 @@ int main (){
     float C2x, C2y, C2z;
     float H1x, H1y, H1z;
     float H2x, H2y, H2z;
-    float H3x, H3y, H3z;
-    float H4x, H4y, H4z;
-    float Nx, Ny, Nz;
+    float N1x, N1y, N1z;
+    float N2x, H2y, N2z;
     float O1x, O1y, O1z;
     float O2x, O2y, O2z;
 
@@ -25,7 +24,7 @@ int main (){
                  |
           H3N+ - C - H 
                  |
-                 R 
+            C34H57N6O17 
           molekul protein itu bentuk rigid 
         */
         
@@ -45,17 +44,13 @@ int main (){
         float rB_H2y = rB_H1y;
         float rB_H2z = rB_H1z;
     
-        float rB_H3x = 0.0;
-        float rB_H3y = cos((masukan nilai/2.0)*pi/180.0) * 1.090;
-        float rB_H3z = sin(( masukan nilai/2.0)*pi/180.0) * 1.090;
+        float rB_N1x = 0.0;
+        float rB_N1y = cos((masukan nilai/2.0)*pi/180.0) * 1.090;
+        float rB_N1z = sin(( masukan nilai/2.0)*pi/180.0) * 1.090;
     
-        float rB_H4x = rB_H3x;
-        float rB_H4y = rB_H3y;
-        float rB_H4z = - rB_H3z;
-    
-        float rB_Nx = 0.0;
-        float rB_Ny = 0.0;
-        float rB_Nz = 0.0; 
+        float rB_N2x = rB_N1x;
+        float rB_N2y = rB_N1y;
+        float rB_N2z = - rB_N1z; 
     
         float rB_O1x = 0.0;
         float rB_O1y = 0.0;
@@ -494,6 +489,74 @@ int main (){
                 O2y[counter] = C1y[counter] + rB_O2y;
                 O2z[counter] = C1z[counter] + rB_O2z;
                 
+                O3x[counter] = C1x[counter] + rB_O3x;
+                O3y[counter] = C1y[counter] + rB_O3y;
+                O3z[counter] = C1z[counter] + rB_O3z;
+                
+                O4x[counter] = C1x[counter] + rB_O4x;
+                O4y[counter] = C1y[counter] + rB_O4y;
+                O4z[counter] = C1z[counter] + rB_O4z;
+                
+                O5x[counter] = C1x[counter] + rB_O5x;
+                O5y[counter] = C1y[counter] + rB_O5y;
+                O5z[counter] = C1z[counter] + rB_O5z;
+                
+                O6x[counter] = C1x[counter] + rB_O6x;
+                O6y[counter] = C1y[counter] + rB_O6y;
+                O6z[counter] = C1z[counter] + rB_O6z;
+                
+                O7x[counter] = C1x[counter] + rB_O7x;
+                O7y[counter] = C1y[counter] + rB_O7y;
+                O7z[counter] = C1z[counter] + rB_O7z;
+                
+                O8x[counter] = C1x[counter] + rB_O8x;
+                O8y[counter] = C1y[counter] + rB_O8y;
+                O8z[counter] = C1z[counter] + rB_O8z;
+                
+                O9x[counter] = C1x[counter] + rB_O9x;
+                O9y[counter] = C1y[counter] + rB_O9y;
+                O9z[counter] = C1z[counter] + rB_O9z;
+                
+                O10x[counter] = C1x[counter] + rB_O10x;
+                O10y[counter] = C1y[counter] + rB_O10y;
+                O10z[counter] = C1z[counter] + rB_O10z;
+                
+                O11x[counter] = C11x[counter] + rB_O11x;
+                O11y[counter] = C11y[counter] + rB_O11y;
+                O11z[counter] = C11z[counter] + rB_O11x;
+                
+                O12x[counter] = C12x[counter] + rB_O12x;
+                O12y[counter] = C12y[counter] + rB_O12y;
+                O12z[counter] = C12z[counter] + rB_O12z;
+                
+                O13x[counter] = C13x[counter] + rB_O13x;
+                O13y[counter] = C13y[counter] + rB_O13y;
+                O13z[counter] = C13z[counter] + rB_O13z;
+                
+                O14x[counter] = C14x[counter] + rB_O14x;
+                O14y[counter] = C14y[counter] + rB_O14y;
+                O14z[counter] = C14z[counter] + rB_O14z;
+                
+                O15x[counter] = C15[counter] + rB_O15x;
+                O15y[counter] = C15[counter] + rB_O15y; 
+                O15z[counter] = C15[counter] + rB_O15z;
+                
+                O16x[counter] = C16x[counter] + rB_O16x;
+                O16y[counter] = C16y[counter] + rB_O16y;
+                O16z[counter] = C16z[counter] + rB_O16z;
+                
+                O17x[counter] = C14x[counter] + rB_O17x;
+                O17y[counter] = C14y[counter] + rB_O17y;
+                O17z[counter] = C14z[counter] + rB_O17z;
+                
+                O18x[counter] = C15[counter] + rB_O18x;
+                O18y[counter] = C15[counter] + rB_O18y; 
+                O18z[counter] = C15[counter] + rB_O18z;
+                
+                O19x[counter] = C16x[counter] + rB_O19x;
+                O19y[counter] = C16y[counter] + rB_O19y;
+                O19z[counter] = C16z[counter] + rB_O19z;
+                
     // hasil iterasi dimasukkan ke dalam file xyz
     ofstream file;
     file.open("molekul-protein.xyz");
@@ -502,20 +565,25 @@ int main (){
 
     // iterasi dalam output array
     for(int m = 0; m < 125; m++){
+        file << setw(3) << "C" << setw(3) << " " \
+             << fixed << setprecision(3) << Cx[m] << setw(3) << " " \
+             << fixed << setprecision(3) << Cy[m] << setw(3) << " " \
+             << fixed << setprecision(3) << Cz[m] << "\n";
+
+        file << setw(3) << "H" << setw(3) << " " \
+             << fixed << setprecision(3) << Hx[m] << setw(3) << " " \
+             << fixed << setprecision(3) << Hy[m] << setw(3) << " " \
+             << fixed << setprecision(3) << Hz[m] << "\n";
+
+        file << setw(3) << "N" << setw(3) << " " \
+             << fixed << setprecision(3) << Nx[m] << setw(3) << " " \
+             << fixed << setprecision(3) << Ny[m] << setw(3) << " " \
+             << fixed << setprecision(3) << Nz[m] << "\n";
+        
         file << setw(3) << "O" << setw(3) << " " \
              << fixed << setprecision(3) << Ox[m] << setw(3) << " " \
              << fixed << setprecision(3) << Oy[m] << setw(3) << " " \
              << fixed << setprecision(3) << Oz[m] << "\n";
-
-        file << setw(3) << "H" << setw(3) << " " \
-             << fixed << setprecision(3) << H1x[m] << setw(3) << " " \
-             << fixed << setprecision(3) << H1y[m] << setw(3) << " " \
-             << fixed << setprecision(3) << H1z[m] << "\n";
-
-        file << setw(3) << "H" << setw(3) << " " \
-             << fixed << setprecision(3) << H2x[m] << setw(3) << " " \
-             << fixed << setprecision(3) << H2y[m] << setw(3) << " " \
-             << fixed << setprecision(3) << H2z[m] << "\n";
     }
 
     file.close();
