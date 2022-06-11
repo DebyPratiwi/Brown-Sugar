@@ -24,7 +24,7 @@ int main (){
                  |
           H3N+ - C - H 
                  |
-            C34H57N6O17 
+            C36H61N7O19 
           molekul protein itu bentuk rigid 
         */
         
@@ -36,7 +36,7 @@ int main (){
         float rB_C2y = 0.0;
         float rB_C3z = cos((1,54/2.0)*pi/180.0) * 1.090;
     
-        float rB_H1x = sin((1,095/2.0)*pi/180.0) * 1.090;
+        float rB_H1x = - sin((1,095/2.0)*pi/180.0) * 1.090;
         float rB_H1y = 0.0
         float rB_H1z = cos((1,095/2.0)*pi/180.0) * 1.090;
     
