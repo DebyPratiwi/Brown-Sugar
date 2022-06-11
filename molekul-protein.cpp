@@ -557,6 +557,7 @@ int main (){
                 O19y[counter] = C16y[counter] + rB_O19y;
                 O19z[counter] = C16z[counter] + rB_O19z;
                 
+                
     // hasil iterasi dimasukkan ke dalam file xyz
     ofstream file;
     file.open("molekul-protein.xyz");
