@@ -32,21 +32,21 @@ int main (){
         float rB_C1y = 0.0;
         float rB_C1z = 0.0;
         
-        float rB_C2x = sin((1,54/2.0)*pi/180.0) * 1.090;
+        float rB_C2x = sin((1.54/2.0)*pi/180.0) * 1.090;
         float rB_C2y = 0.0;
-        float rB_C3z = cos((1,54/2.0)*pi/180.0) * 1.090;
+        float rB_C3z = cos((1.54/2.0)*pi/180.0) * 1.090;
     
-        float rB_H1x = - sin((1,095/2.0)*pi/180.0) * 1.090;
+        float rB_H1x = - sin((1.095/2.0)*pi/180.0) * 1.090;
         float rB_H1y = 0.0
-        float rB_H1z = cos((1,095/2.0)*pi/180.0) * 1.090;
+        float rB_H1z = cos((1.095/2.0)*pi/180.0) * 1.090;
     
         float rB_H2x = - rB_H1x;
         float rB_H2y = rB_H1y;
         float rB_H2z = rB_H1z;
     
         float rB_N1x = 0.0;
-        float rB_N1y = cos((1,47/2.0)*pi/180.0) * 1.090;
-        float rB_N1z = sin((1,47/2.0)*pi/180.0) * 1.090;
+        float rB_N1y = cos((1.47/2.0)*pi/180.0) * 1.090;
+        float rB_N1z = sin((1.47/2.0)*pi/180.0) * 1.090;
     
         float rB_N2x = rB_N1x;
         float rB_N2y = rB_N1y;
@@ -56,9 +56,9 @@ int main (){
         float rB_O1y = 0.0;
         float rB_O1z = 0.0;
         
-        float rB_O2x = sin((1,34/2.0)*pi/180.0) * 1.090;
+        float rB_O2x = sin((1.34/2.0)*pi/180.0) * 1.090;
         float rB_O2y = 0.0;
-        float rB_O3z = cos((1,34/2.0)*pi/180.0) * 1.090;
+        float rB_O3z = cos((1.34/2.0)*pi/180.0) * 1.090;
     
     // iterasi untuk setiap molekul protein
     for(int a = 1; a = < 10; a++){
