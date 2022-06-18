@@ -13,18 +13,127 @@ int main (){
     //deklarasi molekul protein  
     float C1x, C1y, C1z;
     float C2x, C2y, C2z;
+    float C3x, C3y, C3z;
+    float C4x, C4y, C4z;
+    float C5x, C5y, C5z;
+    float C6x, C6y, C6z;
+    float C7x, C7y, C7z;
+    float C8x, C8y, C8z;
+    float C9x, C9y, C9z;
+    float C10x, C10y, C10z;
+    float C11x, C11y, C11z;
+    float C12x, C12y, C12z;
+    float C13x, C13y, C13z;
+    float C14x, C14y, C14z;
+    float C15x, C15y, C15z;
+    float C16x, C16y, C16z;
+    float C17x, C17y, C17z;
+    float C18x, C18y, C18z;
+    float C19x, C19y, C19z;
+    float C20x, C20y, C20z;
+    float C21x, C21y, C21z;
+    float C22x, C22y, C22z;
+    float C23x, C23y, C23z;
+    float C24x, C24y, C24z;
+    float C25x, C25y, C25z;
+    float C26x, C26y, C26z;
+    float C27x, C27y, C27z;
+    float C28x, C28y, C28z;
+    float C29x, C29y, C29z;
+    float C30x, C30y, C30z;
+    float C31x, C31y, C31z;
+    float C32x, C32y, C32;
+    float C33x, C33y, C33;
+    float C34x, C34y, C34z;
     float H1x, H1y, H1z;
     float H2x, H2y, H2z;
-    float N1x, N1y, N1z;
-    float N2x, H2y, N2z;
+    float H3x, H3y, H3z;
+    float H4x, H4y, H4z;
+    float H5x, H5y, H5z;
+    float H6x, H6y, H6z;
+    float H7x, H7y, H7z;
+    float H8x, H8y, H8z;
+    float H9x, H9y, H9z;
+    float H10x, H10y, H10z;
+    float H11x, H11y, H11z;
+    float H12x, H12y, H12z;
+    float H13x, H13y, H13z;
+    float H14x, H14y, H14z;
+    float H15x, H15y, H15z;
+    float H16x, H16y, H16z;
+    float H17x, H17y, H17z;
+    float H18x, H18y, H18z;
+    float H19x, H19y, H19z;
+    float H20x, H20y, H20z;
+    float H21x, H21y, H21z;
+    float H22x, H22y, H22z;
+    float H23x, H23y, H23;
+    float H24x, H24y, H24z;
+    float H25x, H25y, H25z;
+    float H26x, H26y, H26z;
+    float H27x, H27y, H27z;
+    float H28x, H28y, H28z;
+    float H29x, H29y, H29z;
+    float H30x, H30y, H30z;
+    float H31x, H31y, H31z;
+    float H32x, H32y, H32z;
+    float H33x, H33y, H33z;
+    float H34x, H34y, H34z;
+    float H35x, H35y, H35z;
+    float H36x, H36y, H36z;
+    float H37x, H37y, H37z;
+    float H38x, H38y, H38z;
+    float H39x, H39y, H39z;
+    float H40x, H40y, H40z;
+    float H41x, H41y, H41z;
+    float H42x, H42y, H42z;
+    float H43x, H43y, H43z;
+    float H44x, H44y, H44z;
+    float H45x, H45y, H45z;
+    float H46x, H46y, H46z;
+    float H47x, H47y, H47z;
+    float H48x, H48y, H48z;
+    float H49x, H49y, H49z;
+    float H50x, H50y, H50z;
+    float H51x, H51y, H51z;
+    float H52x, H52y, H52z;
+    float H53x, H53y, H53z;
+    float H54x, H54y, H54z;
+    float H55x, H55y, H55z;
+    float H56x, H56y, H56z;
+    float N57x, N57y, N57z;
+    float N58x, H58y, N58z;
+    float H59x, H59y, H59z;
     float O1x, O1y, O1z;
     float O2x, O2y, O2z;
+    float O3x, O3y, O3z;
+    float O4x, O4y, O4z;
+    float O5x, O5y, O5z;
+    float O6x, O6y, O6z;
+    float O7x, O7y, O7z;
+    float O8x, O8y, O8z;
+    float O9x, O9y, O9z;
+    float O10x, O10y, O10z;
+    float O11x, O11y, O11z;
+    float O12x, O12y, O12z;
+    float O13x, O13y, O13z;
+    float O14x, O14y, O14z;
+    float O15x, O15y, O15z;
+    float O16x, O16y, O16z;
+    float O17x, O17y, O17z;
+    float N1x, N1y, N1z;
+    float N2x, N2y, N2z;
+    float N3x, N3y, N3z;
+    float N4x, N4y, N4z;
+    float N5x, N5y, N5z;
+    float N6x, N6y, N6z;
+  
 
     /*          Coo-
                  |
           H3N+ - C - H 
                  |
-            C36H61N7O19 
+            C34H59N6O17 
           molekul protein itu bentuk rigid 
         */
         
@@ -32,21 +141,21 @@ int main (){
         float rB_C1y = 0.0;
         float rB_C1z = 0.0;
         
-        float rB_C2x = sin((1.54/2.0)*pi/180.0) * 1.090;
+        float rB_C2x = sin((1,54/2.0)*pi/180.0) * 1.090;
         float rB_C2y = 0.0;
-        float rB_C3z = cos((1.54/2.0)*pi/180.0) * 1.090;
+        float rB_C3z = cos((1,54/2.0)*pi/180.0) * 1.090;
     
-        float rB_H1x = - sin((1.095/2.0)*pi/180.0) * 1.090;
+        float rB_H1x = - sin((1,095/2.0)*pi/180.0) * 1.090;
         float rB_H1y = 0.0
-        float rB_H1z = cos((1.095/2.0)*pi/180.0) * 1.090;
+        float rB_H1z = cos((1,095/2.0)*pi/180.0) * 1.090;
     
         float rB_H2x = - rB_H1x;
         float rB_H2y = rB_H1y;
         float rB_H2z = rB_H1z;
     
         float rB_N1x = 0.0;
-        float rB_N1y = cos((1.47/2.0)*pi/180.0) * 1.090;
-        float rB_N1z = sin((1.47/2.0)*pi/180.0) * 1.090;
+        float rB_N1y = cos((1,47/2.0)*pi/180.0) * 1.090;
+        float rB_N1z = sin((1,47/2.0)*pi/180.0) * 1.090;
     
         float rB_N2x = rB_N1x;
         float rB_N2y = rB_N1y;
@@ -56,9 +165,9 @@ int main (){
         float rB_O1y = 0.0;
         float rB_O1z = 0.0;
         
-        float rB_O2x = sin((1.34/2.0)*pi/180.0) * 1.090;
+        float rB_O2x = sin((1,34/2.0)*pi/180.0) * 1.090;
         float rB_O2y = 0.0;
-        float rB_O3z = cos((1.34/2.0)*pi/180.0) * 1.090;
+        float rB_O3z = cos((1,34/2.0)*pi/180.0) * 1.090;
     
     // iterasi untuk setiap molekul protein
     for(int a = 1; a = < 10; a++){
